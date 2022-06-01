@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    padding: 0px;
+    width: 16.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-inside {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 14px 16px;
+    gap: 16px;
+}
+
+.left-inside p,
+.right-inside p {
+    color: #191C1F
+}
+
+.left-inside p {
+    line-height: 24px
+}
+
+.right {
+    display: flex;
+    width: 83.75rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right-inside-1 {
+    gap: 60px;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-inside-2 {
+    height: 95rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    width: 100%;
+    background: #F5F6F8;
+}
+
+.filter {
+    width: 93%;
+    gap: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.filter-part {
+    padding: auto 2rem;
+    border-radius: .5rem;
+    height: 3rem; 
+    width: 10rem;
+}
+
+
+
+.filter-part-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: auto 2rem;
+    border-radius: .5rem;
+    height: 3rem; 
+    width: 10rem;
+}
+
+.with-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+th {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+th, td {
+    padding: 0.5rem;
+    color: #191C1F;
+}
+
+td {
+    font-weight: 400;
+    line-height: 24px
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.table {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+th {
+    padding: 1.5rem;
+    font-weight: 500;
+    background-color: #F5F6F8;
+    color: #5A5F6A
+}
+
+thead {
+    border-radius: 2rem;
+}
+
+.last-column {
+    color: #233B82;
+}
+
+tr td:last-child {
+    font-size: 14px;
+}
+
+input[type="text"]::placeholder {  
+    font-weight: 400; 
+    padding-left: .1rem; 
+} 
+
+select::placeholder {
+    font-weight: 400;
+    color: #777D8B;
+}
+
+.pagination a {
+    border-radius: 5px;
+}
+  
+  .pagination a.active {
+    border-radius: 5px;
+}
+
+.pagination {
+    align-self: flex-end;
+    display: inline-block;
+}
+  
+.pagination a {
+    background-color: #F5F6F8;
+    color: black;
+    float: left;
+    padding: 0.5rem 1rem;
+    margin: auto 0.1rem;
+    text-decoration: none;
+}
+  
+.pagination a.active {
+    background-color: #233B82;
+    color: white;
+    border-radius: 5px;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* .daterangepicker {
+    direction: ltr;
+    text-align: right!important;
+} */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* color: rgba(0, 0, 0, 0); */
+    opacity: 1;
+    display: block;
+    background: url(note-text.png) no-repeat;
+    width: 18px;
+    height: 18.5px;
+    margin-left: 0px;
+    border-width: thin;
+}
+
+/* 
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    -webkit-appearance: none;
+} */
+/* 
+input[type='date']:in-range::-webkit-datetime-edit-year-field,input[type='date']:in-range::-webkit-datetime-edit-month-field,input[type='date']:in-range::-webkit-datetime-edit-day-field,input[type='date']:in-range::-webkit-datetime-edit-text{  color: transparent;} */
+
